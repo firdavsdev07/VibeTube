@@ -1,8 +1,10 @@
 import express from "express"
 import { engine } from "express-handlebars"
 import videoRoute from "./routes/videos.route.js"
+import { getAllVideos } from "./controllers/videos.controller.js"
 
 const app = express()
+app.use(express.json())
 const PORT = 5000
 
 app.engine("handlebars", engine())
@@ -11,15 +13,9 @@ app.use('/uploads', express.static('uploads'));
 app.set("view engine", "handlebars")
 app.set("views", "./views")
 
-app.get("/", (req, res) => {
-    res.render("home", {
-        title: "VibeTube"
-    })
-})
+app.get("/", getAllVideos)
 
-app.get("/login", (req, res) => {
-    res.render("login", { title: "Login" })
-})
+
 
 app.use("/videos", videoRoute)
 

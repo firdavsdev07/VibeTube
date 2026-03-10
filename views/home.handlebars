@@ -10,49 +10,21 @@
         </ul>
     </div>
     <div class="videos">
+        {{#each data}}
         <div class="video_item">
-            <video src="../uploads/MATADORA.mp4" controls></video>
+            <video src="/{{this.path}}" controls></video>
             <div class="info-card">
                 <div class="avatar">
-                    <h1>F</h1>
+                    <h1>{{this.author.[0]}}</h1>
                 </div>
                 <div class="text">
-                    Lorem ipsum dolor sit amet.
+                    <strong>{{this.title}}</strong>
+                </div>
+                <div class="date">
+                    <span>{{this.createAt}}</span>
                 </div>
             </div>
         </div>
-        <div class="video_item">
-            <video src="../uploads/MATADORA.mp4" controls></video>
-            <div class="info-card">
-                <div class="avatar">
-                    <h1>F</h1>
-                </div>
-                <div class="text">
-                    Lorem ipsum dolor sit amet.
-                </div>
-            </div>
-        </div>
-        <div class="video_item">
-            <video src="../uploads/MATADORA.mp4" controls></video>
-            <div class="info-card">
-                <div class="avatar">
-                    <h1>F</h1>
-                </div>
-                <div class="text">
-                    Lorem ipsum dolor sit amet.
-                </div>
-            </div>
-        </div>
-        <div class="video_item">
-            <video src="../uploads/MATADORA.mp4" controls></video>
-            <div class="info-card">
-                <div class="avatar">
-                    <h1>F</h1>
-                </div>
-                <p class="text">
-                    Lorem ipsum dolor sit amet.
-                </p>
-            </div>
-        </div>
+        {{/each}}
     </div>
 </section>

@@ -4,52 +4,55 @@
 }
 
 .home .filter {
-    width: 22rem;
-    padding: 2rem 0;
+    display: flex;
+    justify-content: start;
+    padding: 1rem 0;
 }
 
 .home .filter ul {
     display: flex;
     list-style: none;
     padding: 0;
-    justify-content: space-between;
+    gap: 0.5rem;
 }
 
 .filter ul li {
     background-color: #fff0f1;
     color: #12122b;
-    font-size: 0.8rem;
-    padding: 0.15rem 0.7rem;
-    border-radius: 0.2rem;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
     cursor: pointer;
-    transition: all ease 0.4s;
+    transition: all 0.3s ease;
 }
 
 .filter ul li.active {
     background-color: #12122b;
-    color: #fff0f1;
-
+    color: #fff;
 }
 
 .filter ul li:hover {
     background-color: #12122b;
-    color: #fff0f1;
+    color: #fff;
 }
 
 /* --------------------videos---------------------- */
 .videos {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
-.videos .video_item {
-    display: flex;
-    flex-direction: column;
+.video_item {
     padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    transition: transform 0.2s;
 }
+
 
 .video_item video {
-    width: 20rem;
+    width: 100%;
+    height: auto;
     border-radius: 0.4rem;
 }
 
@@ -57,11 +60,11 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .video_item .avatar {
-    background-color: wheat;
+    background-color: #ffcc80;
     border-radius: 50%;
     color: #12122b;
     width: 2rem;
@@ -69,13 +72,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
-h1 {
-    font-size: 1.4rem;
-
+.video_item .avatar h1 {
+    font-size: 1rem;
 }
 
 .video_item .text {
-    font-size: 0.8rem
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    flex: 1;
+}
+
+.video_item .date {
+    font-size: 0.7rem;
+    color: #888;
+    margin-left: auto;
 }

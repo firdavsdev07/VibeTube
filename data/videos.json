@@ -1,0 +1,46 @@
+[
+  {
+    "id": "31d5efa6-5bc8-4312-b714-0acdf42010c6",
+    "title": "boshqa",
+    "desc": "bu boshqa video vitetube uchun",
+    "path": "uploads/9a80e693-b110-4a8e-a0f4-23f44e940343.mp4",
+    "type": "video/mp4",
+    "filename": "9a80e693-b110-4a8e-a0f4-23f44e940343.mp4",
+    "size": 2098086,
+    "author": "Asad",
+    "createAt": "10/03/2026"
+  },
+  {
+    "id": "574728cc-4ba2-48e2-bce8-0a09039e1196",
+    "title": "test",
+    "desc": "Lorem Ipsum is simply dummy text ",
+    "path": "uploads/e9126262-50a1-47e6-8243-fb6b2186202f.mp4",
+    "type": "video/mp4",
+    "filename": "e9126262-50a1-47e6-8243-fb6b2186202f.mp4",
+    "size": 2098086,
+    "author": "Firdavs",
+    "createAt": "10/03/2026"
+  },
+  {
+    "id": "2a326ea0-6493-4983-822a-26d3fc0b8363",
+    "title": "Salom",
+    "desc": "Lorem Ipsum is simply dummy text ",
+    "path": "uploads/b75eed41-50b7-422a-a398-0a26af9d6e1b.mp4",
+    "type": "video/mp4",
+    "filename": "b75eed41-50b7-422a-a398-0a26af9d6e1b.mp4",
+    "size": 2098086,
+    "author": "Firdavs",
+    "createAt": "10/03/2026"
+  },
+  {
+    "id": "2668078b-a7d5-46ad-a448-d835dbb5299f",
+    "title": "Lorem Ipsum",
+    "desc": "Lorem Ipsum is simply dummy text ",
+    "path": "uploads/e57200d8-294e-4df6-9cb5-1c9ffe5c8f07.mp4",
+    "type": "video/mp4",
+    "filename": "e57200d8-294e-4df6-9cb5-1c9ffe5c8f07.mp4",
+    "size": 2098086,
+    "author": "Lola",
+    "createAt": "10/03/2026"
+  }
+]
