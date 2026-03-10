@@ -1,0 +1,26 @@
+{
+  "name": "youtube-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firdavsdev07/youtube-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/firdavsdev07/youtube-clone/issues"
+  },
+  "homepage": "https://github.com/firdavsdev07/youtube-clone#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.6"
+  }
+}
