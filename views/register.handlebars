@@ -10,16 +10,16 @@
     <h2>Create account</h2>
     <p class="subtitle">to start uploading videos</p>
 
-    <form>
+    <form action="/register" method="POST">
 
       <label>Username</label>
-      <input type="text" placeholder="Enter your username">
+      <input name="username" type="text" placeholder="Enter your username">
 
       <label>Email</label>
-      <input type="email" placeholder="Enter your email">
+      <input name="email" type="email" placeholder="Enter your email">
 
       <label>Password</label>
-      <input type="password" placeholder="Enter your password">
+      <input name="password" type="password" placeholder="Enter your password">
 
       <button class="register-btn">
         <i class="fa-solid fa-user-plus"></i>

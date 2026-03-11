@@ -41,7 +41,7 @@
 .videos {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .video_item {
@@ -52,14 +52,13 @@
 
 
 .video_item video {
-    height: 20rem;
+    height: 15rem;
     border-radius: 0.4rem;
     object-fit: cover;
 }
 
 .info-card {
     display: flex;
-    align-items: center;
     gap: 0.5rem;
     margin-top: 0.5rem;
 }
@@ -68,8 +67,9 @@
     background-color: #ffcc80;
     border-radius: 50%;
     color: #12122b;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,16 +78,30 @@
 
 .video_item .avatar h1 {
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .video_item .text {
     font-size: 1rem;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.video_item .text strong {
+    font-size: 0.95rem;
+    color: #12122b;
+}
+
+.video_item .text p {
+    font-size: 0.85rem;
+    color: #606060;
+    margin: 0;
 }
 
 .video_item .date {
-    font-size: 1rem;
-    color: #888;
-    margin-left: auto;
+    font-size: 0.85rem;
+    color: #606060;
 }

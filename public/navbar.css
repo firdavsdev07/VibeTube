@@ -27,7 +27,7 @@
 .navbar .box {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .navbar .search {
@@ -81,4 +81,46 @@
 
 .auth i {
     color: #000;
+}
+
+.user-welcome {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar {
+    background-color: #ff0000;
+    color: #fff;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logout {
+    background-color: #fff0f1;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.logout:hover {
+    background-color: #ffe0e1;
+}
+
+.logout i {
+    color: #ff0000;
+    font-size: 1.2rem;
 }

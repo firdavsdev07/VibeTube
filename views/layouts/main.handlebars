@@ -28,13 +28,26 @@
             <input type="text" placeholder="search videos...">
         </div>
         <div class="box">
-            <a href="/upload" class="uploads">
+            {{#if username}}
+            <a href="/upload?username={{username}}&userId={{userId}}" class="uploads">
                 <i class="fa-solid fa-upload"></i>
                 <span>Upload</span>
             </a>
+            {{else}}
+
+            {{/if}}
+            {{#if username}}
+            <div class="user-welcome">
+                <a href="/" class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+                <div class="user-avatar">{{username.[0]}}</div>
+            </div>
+            {{else}}
             <a href="/login" class="auth">
                 <i class="fa-solid fa-user"></i>
             </a>
+            {{/if}}
         </div>
     </nav>
     {{/unless}}

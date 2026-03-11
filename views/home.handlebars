@@ -15,13 +15,11 @@
             <video src="/{{this.path}}" controls></video>
             <div class="info-card">
                 <div class="avatar">
-                    <h1>{{this.author.[0]}}</h1>
+                    <h1>{{this.author_name.[0]}}</h1>
                 </div>
                 <div class="text">
                     <strong>{{this.title}}</strong>
-                </div>
-                <div class="date">
-                    <span>{{this.createAt}}</span>
+                    <p>{{this.author_name}} • {{this.formatted_date}}</p>
                 </div>
             </div>
         </div>
