@@ -19,7 +19,7 @@
 .filter ul li {
     background-color: #fff0f1;
     color: #12122b;
-    font-size: 0.85rem;
+    font-size: 1.25rem;
     padding: 0.4rem 0.8rem;
     border-radius: 0.3rem;
     cursor: pointer;
@@ -37,9 +37,10 @@
 }
 
 /* --------------------videos---------------------- */
+
 .videos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: auto auto auto auto;
     gap: 1rem;
 }
 
@@ -76,17 +77,17 @@
 }
 
 .video_item .avatar h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .video_item .text {
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 1.2rem;
     flex: 1;
 }
 
 .video_item .date {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #888;
     margin-left: auto;
 }

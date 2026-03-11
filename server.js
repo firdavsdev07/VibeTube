@@ -15,7 +15,9 @@ app.set("views", "./views")
 
 app.get("/", getAllVideos)
 
-
+app.get("/upload", (req, res) => {
+    res.render("upload", { upload: "upload" })
+})
 
 app.use("/videos", videoRoute)
 

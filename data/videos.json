@@ -42,5 +42,38 @@
     "size": 2098086,
     "author": "Lola",
     "createAt": "10/03/2026"
+  },
+  {
+    "id": "2100851c-20c7-4f9d-a528-42216913ac27",
+    "title": "Sardor",
+    "desc": "Sardorni videosi tarqaldi",
+    "path": "uploads/51984dd5-ff7f-4d99-9063-ce75ec11e620.mp4",
+    "type": "video/mp4",
+    "filename": "51984dd5-ff7f-4d99-9063-ce75ec11e620.mp4",
+    "size": 2098086,
+    "author": "Og'abek",
+    "createAt": "11/03/2026"
+  },
+  {
+    "id": "aeae89f3-abcc-4527-b564-d5d716c07fd7",
+    "title": "Sardor",
+    "desc": "Sardorni videosi tarqaldi",
+    "path": "uploads/781c716a-9d95-4b91-90cf-a740ccbe180a.mp4",
+    "type": "video/mp4",
+    "filename": "781c716a-9d95-4b91-90cf-a740ccbe180a.mp4",
+    "size": 2098086,
+    "author": "Firdavs",
+    "createAt": "11/03/2026"
+  },
+  {
+    "id": "5ed3a29c-ecaf-49d3-9e6f-24961b7c5887",
+    "title": "Akbarali ni videosi tarqaldi",
+    "desc": "Lorem Ipsum is simply dummy text ",
+    "path": "uploads/4d5f5c5e-dcce-4c3a-8855-167e6abc0f77.mp4",
+    "type": "video/mp4",
+    "filename": "4d5f5c5e-dcce-4c3a-8855-167e6abc0f77.mp4",
+    "size": 2098086,
+    "author": "Firdavs",
+    "createAt": "11/03/2026"
   }
 ]

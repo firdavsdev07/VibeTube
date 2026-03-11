@@ -9,7 +9,6 @@ export const getAllVideos = (req, res) => {
     try {
         const data = fs.readFileSync(filePath, "utf8")
         const videos = JSON.parse(data)
-        // res.json({ message: "all videos", videos: videos })
         res.render("home", {
             title: "VibeTube",
             data: videos
