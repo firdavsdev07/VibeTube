@@ -12,19 +12,19 @@
             Upload New Video
         </h2>
 
-        <form>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
 
             <div class="form-left">
                 <label for="title">Video Title</label>
-                <input type="text" id="title" placeholder="e.g. My Awesome Vlog #1">
+                <input type="text" name="title" id="title" placeholder="e.g. My Awesome Vlog #1">
 
                 <label for="desc">Description (Optional)</label>
-                <textarea id="desc" placeholder="Tell viewers about your video"></textarea>
+                <textarea id="desc" name="title" placeholder="Tell viewers about your video"></textarea>
             </div>
 
             <div class="video-file">
 
-                <input type="file" id="fileInput" hidden>
+                <input type="file" name="video" id="fileInput" hidden>
 
                 <i class="fa-solid fa-file-arrow-up upload-icon"></i>
                 <p>Drag and drop video files to upload</p>

@@ -1,0 +1,90 @@
+.register-page {
+    background: #f1f1f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-page .register-card {
+    width: 25rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+
+.register-page .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.register-page .logo i {
+    color: red;
+    font-size: 1.6rem;
+}
+
+
+.register-page h2 {
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.register-page .subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.register-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.register-page label {
+    font-size: 0.85rem;
+}
+
+.register-page input {
+    padding: 0.7rem;
+    border: 0.06rem solid #d1d5db;
+    border-radius: 0.4rem;
+}
+
+
+.register-page .register-btn {
+    margin-top: 0.8rem;
+    padding: 0.7rem;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.register-page .register-btn i {
+    margin-right: 0.3rem;
+}
+
+
+.register-page .signin-link {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+.register-page .signin-link a {
+    color: red;
+    text-decoration: none;
+}

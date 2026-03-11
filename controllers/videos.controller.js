@@ -45,8 +45,9 @@ export const uploadVideo = (req, res) => {
             if (err) {
                 return res.json({ error: err.message })
             }
-            res.json({ message: "Video uploaded successfully!", video: newVideoPost })
         })
+        res.redirect("/")
+        // res.json({ message: "Video uploaded successfully!", video: newVideoPost })
     } catch (error) {
         res.json({ error: error.message })
     }

@@ -1,79 +1,38 @@
 [
   {
-    "id": "31d5efa6-5bc8-4312-b714-0acdf42010c6",
-    "title": "boshqa",
-    "desc": "bu boshqa video vitetube uchun",
-    "path": "uploads/9a80e693-b110-4a8e-a0f4-23f44e940343.mp4",
+    "id": "6f5258a1-858c-4d9b-a3be-abc574033f9d",
+    "title": [
+      "Aliqua Natus aut ex",
+      "Eaque excepteur quis"
+    ],
+    "path": "uploads/4e120d81-e0e5-4415-97e8-e12f14601fa8.mp4",
     "type": "video/mp4",
-    "filename": "9a80e693-b110-4a8e-a0f4-23f44e940343.mp4",
-    "size": 2098086,
-    "author": "Asad",
-    "createAt": "10/03/2026"
-  },
-  {
-    "id": "574728cc-4ba2-48e2-bce8-0a09039e1196",
-    "title": "test",
-    "desc": "Lorem Ipsum is simply dummy text ",
-    "path": "uploads/e9126262-50a1-47e6-8243-fb6b2186202f.mp4",
-    "type": "video/mp4",
-    "filename": "e9126262-50a1-47e6-8243-fb6b2186202f.mp4",
-    "size": 2098086,
-    "author": "Firdavs",
-    "createAt": "10/03/2026"
-  },
-  {
-    "id": "2a326ea0-6493-4983-822a-26d3fc0b8363",
-    "title": "Salom",
-    "desc": "Lorem Ipsum is simply dummy text ",
-    "path": "uploads/b75eed41-50b7-422a-a398-0a26af9d6e1b.mp4",
-    "type": "video/mp4",
-    "filename": "b75eed41-50b7-422a-a398-0a26af9d6e1b.mp4",
-    "size": 2098086,
-    "author": "Firdavs",
-    "createAt": "10/03/2026"
-  },
-  {
-    "id": "2668078b-a7d5-46ad-a448-d835dbb5299f",
-    "title": "Lorem Ipsum",
-    "desc": "Lorem Ipsum is simply dummy text ",
-    "path": "uploads/e57200d8-294e-4df6-9cb5-1c9ffe5c8f07.mp4",
-    "type": "video/mp4",
-    "filename": "e57200d8-294e-4df6-9cb5-1c9ffe5c8f07.mp4",
-    "size": 2098086,
-    "author": "Lola",
-    "createAt": "10/03/2026"
-  },
-  {
-    "id": "2100851c-20c7-4f9d-a528-42216913ac27",
-    "title": "Sardor",
-    "desc": "Sardorni videosi tarqaldi",
-    "path": "uploads/51984dd5-ff7f-4d99-9063-ce75ec11e620.mp4",
-    "type": "video/mp4",
-    "filename": "51984dd5-ff7f-4d99-9063-ce75ec11e620.mp4",
-    "size": 2098086,
-    "author": "Og'abek",
+    "filename": "4e120d81-e0e5-4415-97e8-e12f14601fa8.mp4",
+    "size": 26423356,
     "createAt": "11/03/2026"
   },
   {
-    "id": "aeae89f3-abcc-4527-b564-d5d716c07fd7",
-    "title": "Sardor",
-    "desc": "Sardorni videosi tarqaldi",
-    "path": "uploads/781c716a-9d95-4b91-90cf-a740ccbe180a.mp4",
+    "id": "aab719dd-8fe6-470b-909d-de0ac74198d8",
+    "title": [
+      "Eu sunt aut enim ita",
+      "Rerum eius quia enim"
+    ],
+    "path": "uploads/9b3ced94-849b-420e-a443-0c8618e54419.mp4",
     "type": "video/mp4",
-    "filename": "781c716a-9d95-4b91-90cf-a740ccbe180a.mp4",
+    "filename": "9b3ced94-849b-420e-a443-0c8618e54419.mp4",
     "size": 2098086,
-    "author": "Firdavs",
     "createAt": "11/03/2026"
   },
   {
-    "id": "5ed3a29c-ecaf-49d3-9e6f-24961b7c5887",
-    "title": "Akbarali ni videosi tarqaldi",
-    "desc": "Lorem Ipsum is simply dummy text ",
-    "path": "uploads/4d5f5c5e-dcce-4c3a-8855-167e6abc0f77.mp4",
+    "id": "8ce4dabe-8506-44d2-9c57-1be7c87d8ed0",
+    "title": [
+      "Cupiditate perspicia",
+      "Sunt est ut lorem n"
+    ],
+    "path": "uploads/e7066754-39ee-4f1f-bc24-d4dbf391f1ab.mp4",
     "type": "video/mp4",
-    "filename": "4d5f5c5e-dcce-4c3a-8855-167e6abc0f77.mp4",
-    "size": 2098086,
-    "author": "Firdavs",
+    "filename": "e7066754-39ee-4f1f-bc24-d4dbf391f1ab.mp4",
+    "size": 11286916,
     "createAt": "11/03/2026"
   }
 ]
