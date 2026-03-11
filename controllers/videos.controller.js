@@ -1,14 +1,16 @@
 import { v4 as uuid4 } from "uuid"
 import path from "path"
 import fs from "fs"
+import { pool } from "../config/db.js"
 
 const filePath = path.resolve("data", "videos.json")
 
 
-export const getAllVideos = (req, res) => {
+export const getAllVideos = async (req, res) => {
     try {
-        const data = fs.readFileSync(filePath, "utf8")
-        const videos = JSON.parse(data)
+        const data = await pool.query("SELECT * FROM videos")
+        const videos = data.rows
+        console.log(videos)
         res.render("home", {
             title: "VibeTube",
             data: videos
@@ -18,36 +20,31 @@ export const getAllVideos = (req, res) => {
     }
 }
 
-export const uploadVideo = (req, res) => {
+export const uploadVideo = async (req, res) => {
     const { title, desc, author } = req.body
     const videoFile = req.file
-    const videoAll = []
 
+    if (!videoFile) return res.status(400).send("Video file required");
+
+    const newVideoPost = {
+        id: uuid4(),
+        title,
+        desc,
+        path: videoFile.path,
+        type: videoFile.mimetype,
+        filename: videoFile.filename,
+        size: videoFile.size,
+        author,
+    }
     try {
-
-        const videoDB = JSON.parse(fs.readFileSync(filePath, { encoding: "utf8" }))
-
-        const newVideoPost = {
-            id: uuid4(),
-            title,
-            desc,
-            path: videoFile.path,
-            type: videoFile.mimetype,
-            filename: videoFile.filename,
-            size: videoFile.size,
-            author,
-            createAt: new Date().toLocaleDateString('en-GB')
-        }
-
-        videoAll.push(...videoDB, newVideoPost)
-
-        fs.writeFile(filePath, JSON.stringify(videoAll, null, 2), (err) => {
-            if (err) {
-                return res.json({ error: err.message })
-            }
-        })
+        const query = `
+            INSERT INTO videos (id,title,"desc",path,type,filename,size,author)
+            VALUES ($1,$2,$3,$4,$5,$6,$7,$8)
+            RETURNING *;
+        `
+        const result = await pool.query(query, [...Object.values(newVideoPost)])
+        console.log(result)
         res.redirect("/")
-        // res.json({ message: "Video uploaded successfully!", video: newVideoPost })
     } catch (error) {
         res.json({ error: error.message })
     }

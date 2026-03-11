@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    {{#unless hideNavbar}}
     <nav class="navbar">
         <a href="/" class="logo">
             <i class="fa-solid fa-video"></i>
@@ -36,6 +37,7 @@
             </a>
         </div>
     </nav>
+    {{/unless}}
     {{{body}}}
 </body>
 
