@@ -9,7 +9,7 @@ const filePath = path.resolve("data", "videos.json")
 export const getAllVideos = async (req, res) => {
     const { username, userId } = req.query
     try {
-        const query = `
+        const query = ` 
             SELECT videos.*, 
                    users.username as author_name,
                    TO_CHAR(videos.created_at, 'DD Mon YYYY') as formatted_date
