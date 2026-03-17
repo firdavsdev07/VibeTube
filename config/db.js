@@ -10,9 +10,9 @@ export const pool = new Pool({
 
 pool.connect()
     .then(client => {
-        console.log("Ma'lumotlar bazasiga muvaffaqiyatli ulanish amalga oshdi!");
+        console.log("Successfully connected to the database");
         client.release();
     })
     .catch(err => {
-        console.error("Ulanishda xatolik:", err);
+        console.error(err);
     });
