@@ -19,7 +19,11 @@
     "url": "https://github.com/firdavsdev07/youtube-clone/issues"
   },
   "homepage": "https://github.com/firdavsdev07/youtube-clone#readme",
+  "pnpm": {
+    "onlyBuiltDependencies": ["bcrypt"]
+  },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "express-handlebars": "^8.0.6",
