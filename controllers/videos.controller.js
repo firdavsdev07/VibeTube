@@ -58,3 +58,47 @@ export const uploadVideo = async (req, res) => {
         res.json({ error: error.message })
     }
 }
+
+export const getEditVideo = async (req, res) => {
+    const { id } = req.params
+    const { username, userId } = req.query
+    try {
+        const data = await pool.query(`SELECT * FROM videos WHERE id = $1`, [id])
+        const video = data.rows[0]
+        if (!video) return res.status(404).send("Video topilmadi")
+        if (video.author !== userId) return res.status(403).send("Ruxsat yo'q")
+        res.render("edit", { video, username, userId })
+    } catch (error) {
+        res.json({ error: error.message })
+    }
+}
+
+export const editVideo = async (req, res) => {
+    const { id } = req.params
+    const { title, desc } = req.body
+    const { username, userId } = req.query
+    try {
+        const data = await pool.query(`SELECT author FROM videos WHERE id = $1`, [id])
+        if (!data.rows[0] || data.rows[0].author !== userId) return res.status(403).send("Ruxsat yo'q")
+        await pool.query(`UPDATE videos SET title=$1, "desc"=$2 WHERE id=$3`, [title, desc, id])
+        res.redirect(`/?username=${username}&userId=${userId}`)
+    } catch (error) {
+        res.json({ error: error.message })
+    }
+}
+
+export const deleteVideo = async (req, res) => {
+    const { id } = req.params
+    const { username, userId } = req.query
+    try {
+        const data = await pool.query(`SELECT author, filename FROM videos WHERE id = $1`, [id])
+        const video = data.rows[0]
+        if (!video || video.author !== userId) return res.status(403).send("Ruxsat yo'q")
+        await pool.query(`DELETE FROM videos WHERE id = $1`, [id])
+        const filePath = path.resolve("uploads", video.filename)
+        if (fs.existsSync(filePath)) fs.unlinkSync(filePath)
+        res.redirect(`/?username=${username}&userId=${userId}`)
+    } catch (error) {
+        res.json({ error: error.message })
+    }
+}

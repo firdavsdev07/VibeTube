@@ -1,7 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import { engine } from "express-handlebars";
-import { getAllVideos, uploadVideo } from "./controllers/videos.controller.js";
+import { getAllVideos, uploadVideo, getEditVideo, editVideo, deleteVideo } from "./controllers/videos.controller.js";
 import { upload } from "./multer/multer.js";
 import { login, register } from "./controllers/auth.controller.js";
 
@@ -11,7 +11,11 @@ app.use(express.urlencoded({ extended: true }));
 
 const PORT = 5000;
 
-app.engine("handlebars", engine());
+app.engine("handlebars", engine({
+  helpers: {
+    eq: (a, b) => a === b
+  }
+}));
 app.use(express.static("public"));
 app.use("/uploads", express.static("uploads"));
 app.set("view engine", "handlebars");
@@ -39,6 +43,11 @@ app.get("/upload", (req, res) => {
   res.render("upload", { upload: "upload", username: username, userId: userId });
 });
 app.post("/upload", upload.single("video"), uploadVideo)
+
+//edit & delete
+app.get("/edit/:id", getEditVideo)
+app.post("/edit/:id", editVideo)
+app.post("/delete/:id", deleteVideo)
 
 app.listen(PORT, () => {
   console.log(`sever is running http://localhost:${PORT}`);

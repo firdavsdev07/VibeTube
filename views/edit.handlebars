@@ -1,0 +1,34 @@
+<section class="upload-box">
+
+    <div class="header">
+        <h1>Edit Video</h1>
+        <p>Update your video details</p>
+    </div>
+
+    <div class="upload-form">
+
+        <h2 class="form-title">
+            <i class="fa-solid fa-pen-to-square"></i>
+            Edit Video
+        </h2>
+
+        <form action="/edit/{{video.id}}?username={{username}}&userId={{userId}}" method="POST">
+
+            <div class="form-left">
+                <label for="title">Video Title</label>
+                <input type="text" name="title" id="title" value="{{video.title}}">
+
+                <label for="desc">Description</label>
+                <textarea id="desc" name="desc">{{video.desc}}</textarea>
+            </div>
+
+            <button class="publish-btn">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Save Changes
+            </button>
+
+        </form>
+
+    </div>
+
+</section>

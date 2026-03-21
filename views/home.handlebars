@@ -22,6 +22,18 @@
                     <p>{{this.author_name}} • {{this.formatted_date}}</p>
                 </div>
             </div>
+            {{#if (eq this.author ../userId)}}
+            <div class="video-actions">
+                <a href="/edit/{{this.id}}?username={{../username}}&userId={{../userId}}" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i> Edit
+                </a>
+                <form action="/delete/{{this.id}}?username={{../username}}&userId={{../userId}}" method="POST" onsubmit="return confirm('Videoni o\'chirmoqchimisiz?')">
+                    <button type="submit" class="delete-btn">
+                        <i class="fa-solid fa-trash"></i> Delete
+                    </button>
+                </form>
+            </div>
+            {{/if}}
         </div>
         {{/each}}
     </div>

@@ -105,3 +105,34 @@
     font-size: 0.85rem;
     color: #606060;
 }
+
+.video-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.edit-btn, .delete-btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.edit-btn {
+    background-color: #12122b;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #e53935;
+    color: #fff;
+}
+
+.edit-btn:hover { background-color: #2a2a50; }
+.delete-btn:hover { background-color: #c62828; }
